@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEE ~ Makes You Talk</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.min.css" integrity="sha512-8hM9a+2hrLBhOuB3uiy+QIXBsu6Qk+snsP1CboFQW6pdt/yYz0IcDp/+CGv5m39r9doGUc/zw6aBpyLF6XFgzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="shadow-soft">
+      <div class="align-items-center container flex justify-between py-1">
+        <a href="#" aria-label="Halaman Utama">
+          <img src="assets/image/Logo.png" alt="Logo BEE" />
+        </a>
+        <button id="hamburger" class="hamburger" aria-label="Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="navMenu" class="nav-link" aria-label="Navigasi Utama">
+          <ul class="flex-center flex">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#courses">Course</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#pricing">Biaya</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li>
+              <button type="button" class="btn btn-primary shadow-sm">Login</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero py-3">
+        <div class="align-items-center container flex flex-col gap-3">
+          <button class="btn btn-secondary btn-rounded align-items-center flex shadow-lg">
+            <span class="icon-circle">
+              <i class="fa-solid fa-school"></i>
+            </span>
+            Bright Excellent English
+            <img src="assets/image/Hero grid icons.svg" alt="Hero Icon" />
+          </button>
+
+          <h1 class="text-center">
+            Solusi Untuk Belajar Melatih Bahasa Inggrismu
+            <span class="text-color-accent d-block">Lebih Lancar dan Percaya Diri</span>
+          </h1>
+
+          <p class="text-color-secondary text-center">BEE adalah lembaga pendidikan bahasa Inggris yang membantu siswa meraih kemahiran berbahasa Inggris dan meningkatkan kepercayaan diri dalam berkomunikasi secara efektif.</p>
+
+          <div class="hero-btn flex gap-2">
+            <button class="btn btn-primary shadow-sm">
+              Daftar Sekarang
+              <i class="fa-solid fa-circle-chevron-right"></i>
+            </button>
+            <button class="btn btn-secondary bg-white shadow-lg">
+              <i class="fa-solid fa-play"></i>
+              Ikuti Tes TOEFL GRATIS!!
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kursus Section -->
+      <section id="kursus" class="kursus pb-3">
+        <div class="container">
+          <header class="title pb-3 text-center">
+            <h2 class="pb-1">
+              Pilihan Kursus yang
+              <span class="text-color-accent">bisa kamu pilih</span>
+            </h2>
+            <p class="text-color-secondary">BEE merupakan tempat kursus bahasa Inggris terbaik yang ada di Balaraja.</p>
+          </header>
+
+          <div class="kursus-list flex justify-center gap-2 pb-3">
+            <!-- Card Kursus List 1 -->
+            <article class="card shadow-lg">
+              <div class="card-image">
+                <div class="icon-circle icon-kursus">
+                  <i class="fa-solid fa-users-line"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Bimbingan Belajar</h3>
+                <p class="text-color-secondary pt-1">Bimbingan pelajaran sekolah dari SD hingga SMK.</p>
+              </div>
+            </article>
+
+            <!-- Card Kursus List 2 -->
+            <article class="card shadow-lg">
+              <div class="card-image">
+                <div class="icon-circle icon-kursus">
+                  <i class="fa-solid fa-book"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Bahasa Inggris</h3>
+                <p class="text-color-secondary pt-1">Belajar speaking, listening, dan pelatihan TOEFL/TOEIC.</p>
+              </div>
+            </article>
+
+            <!-- Card Kursus List 3 -->
+            <article class="card shadow-lg">
+              <div class="card-image">
+                <div class="icon-circle icon-kursus">
+                  <i class="fa-solid fa-square-pen"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Desain Grafis</h3>
+                <p class="text-color-secondary pt-1">Pembelajaran CorelDRAW & Photoshop untuk pemula.</p>
+              </div>
+            </article>
+
+            <!-- Card Kursus List 4 -->
+            <article class="card shadow-lg">
+              <div class="card-image">
+                <div class="icon-circle icon-kursus">
+                  <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Test TOEFL Gratis</h3>
+                <p class="text-color-secondary pt-1">Latihan TOEFL gratis untuk mengukur kemampuanmu sebelum tes resmi.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="kursus-benefits flex justify-center gap-3 pt-3">
+            <!-- Card Kursus Benefits 1 -->
+            <article class="card relative text-center shadow-lg">
+              <div class="icon-wrapper icon-users icon-circle">
+                <i class="fa-solid fa-user-group fa-xl"></i>
+              </div>
+              <div class="card-content pt-1">
+                <h3 class="pt-1 pb-1">Murah & Berkualitas</h3>
+                <p class="text-color-secondary">Pengajar berpengalaman dan kompeten di bidangnya.</p>
+              </div>
+            </article>
+
+            <!-- Card Kursus Benefits 2 -->
+            <article class="card relative text-center shadow-lg">
+              <div class="icon-wrapper icon-calendar icon-circle">
+                <i class="fa-solid fa-calendar-days fa-xl"></i>
+              </div>
+              <div class="card-content pt-1">
+                <h3 class="pt-1 pb-1">Flexible & Penjadwalan Mudah</h3>
+                <p class="text-color-secondary">Penjadwalan menyesuaikan dengan waktu siswa.</p>
+              </div>
+            </article>
+
+            <!-- Card  Kursus Benefits 3 -->
+            <article class="card relative text-center shadow-lg">
+              <div class="icon-wrapper icon-document icon-circle">
+                <i class="fa-solid fa-people-arrows fa-xl"></i>
+              </div>
+              <div class="card-content pt-1">
+                <h3 class="pt-1 pb-1">Pembelajaran Komunitas</h3>
+                <p class="text-color-secondary">Mendorong siswa aktif di kegiatan sosial & budaya.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about py-2">
+        <div class="align-items-center container flex flex-col gap-3">
+          <header class="title text-center">
+            <h2 class="pb-1">
+              Mengapa
+              <span class="text-color-accent">Bright Excellent English?</span>
+            </h2>
+            <p class="text-color-secondary mx-auto">Platform kursus terbaik di Balaraja dengan pembelajaran berbagai kalangan & layanan tes TOEFL online gratis.</p>
+          </header>
+
+          <div class="flex flex-wrap justify-center gap-4">
+            <figure class="about-images-container relative">
+              <img src="assets/image/About Profle.png" alt="Profil BEE" class="w-full" />
+              <figcaption class="about-overlay absolute inset-0 flex flex-col items-center justify-center text-white">
+                <h4 class="pb-1">PROFILE KAMI</h4>
+                <button class="btn-about-profile btn btn-outline-secondary btn-rounded">Lihat Detail</button>
+              </figcaption>
+            </figure>
+
+            <figure class="about-images-container relative">
+              <img src="assets/image/About Kursus.png" alt="TOEFL Gratis" class="w-full" />
+              <figcaption class="about-overlay absolute inset-0 flex flex-col items-center justify-center text-white">
+                <h4 class="pb-1">TOEFL GRATIS</h4>
+                <button class="btn btn-primary">Daftar Sekarang</button>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Program Kursus Section -->
+      <section class="program-kursus py-2" id="program-kursus">
+        <div class="container flex w-full flex-col items-center gap-3">
+          <header class="title text-center">
+            <h2 class="pb-1">
+              Program
+              <span class="text-color-accent">Kursus</span>
+            </h2>
+            <p class="text-color-secondary">Rekomendasi pilihan program kursus sesuai dengan kebutuhan kamu</p>
+          </header>
+
+          <nav aria-label="Filter Program Kursus" class="flex-center flex gap-4">
+            <button class="btn btn-secondary shadow-sm">
+              <i class="fa-solid fa-filter" aria-hidden="true"></i>
+              <span>Best</span>
+            </button>
+            <button class="btn btn-secondary shadow-sm">
+              <i class="fa-solid fa-book" aria-hidden="true"></i>
+              <span>Bimbel</span>
+            </button>
+            <button class="btn btn-secondary shadow-sm">
+              <i class="fa-solid fa-earth-asia" aria-hidden="true"></i>
+              <span>Bahasa Inggris</span>
+            </button>
+            <button class="btn btn-secondary shadow-sm">
+              <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+              <span>Desain Grafis</span>
+            </button>
+            <button class="btn btn-secondary shadow-sm">
+              <i class="fa-solid fa-newspaper" aria-hidden="true"></i>
+              <span>Microsoft Office</span>
+            </button>
+          </nav>
+
+          <div class="program-kursus-list flex justify-center gap-1">
+            <!-- Card Program Kursus 1 -->
+            <article class="card shadow-lg" aria-label="Program Semua Matapelajaran Sekolah">
+              <figure class="card-image">
+                <img src="assets/image/Program Kursu Microsoft.png" alt="Semua Matapelajaran Sekolah" />
+              </figure>
+              <div class="card-content">
+                <div class="program-kursus-category flex flex-wrap">
+                  <span class="btn btn-secondary">Bimbel</span>
+                  <span class="btn btn-secondary">SD</span>
+                  <span class="btn btn-secondary">SMP</span>
+                  <span class="btn btn-secondary">SMA/SMK</span>
+                  <span class="btn btn-secondary">Best</span>
+                  <span class="btn btn-secondary">Popular</span>
+                </div>
+                <h3 class="pt-2">Semua Matapelajaran Sekolah</h3>
+                <p class="text-color-secondary pt-1">Membimbing dalam semua matapelajaran maupun tugas dari sekolah sebagai pembelajaran tambahan yang tidak diajarkan pada sekolah.</p>
+              </div>
+            </article>
+
+            <!-- Card Program Kursus 2 -->
+            <article class="card shadow-lg" aria-label="Program Basic Inggris">
+              <figure class="card-image">
+                <img src="assets/image/Program Kursu Microsoft.png" alt="Basic Inggris" />
+              </figure>
+              <div class="card-content">
+                <div class="program-kursus-category flex w-full flex-wrap gap-1">
+                  <span class="btn btn-secondary">Bahasa Inggris</span>
+                  <span class="btn btn-secondary">Semua Kalangan</span>
+                  <span class="btn btn-secondary">Best</span>
+                  <span class="btn btn-secondary">Popular</span>
+                </div>
+                <h3 class="pt-2">Basic Inggris</h3>
+                <p class="text-color-secondary pt-1">Mempelajari bahasa Inggris dasar sebagai fundamental untuk memperdalam speaking maupun pelajaran yang diberikan di sekolah.</p>
+              </div>
+            </article>
+
+            <!-- Card Program Kursus 3 -->
+            <article class="card shadow-lg" aria-label="Program Microsoft Office">
+              <figure class="card-image">
+                <img src="assets/image/Program Kursu Microsoft.png" alt="Microsoft Office" />
+              </figure>
+              <div class="card-content">
+                <div class="program-kursus-category flex w-full flex-wrap gap-1">
+                  <span class="btn btn-secondary">Microsoft Office</span>
+                  <span class="btn btn-secondary">Semua Kalangan</span>
+                  <span class="btn btn-secondary">Best</span>
+                  <span class="btn btn-secondary">Popular</span>
+                </div>
+                <h3 class="pt-2">Microsoft Office</h3>
+                <p class="text-color-secondary pt-1">Memperkenalkan shortcut dan cara penggunaan dari software Microsoft untuk industri maupun sekolah seperti Excel, Word, dan PowerPoint.</p>
+              </div>
+            </article>
+          </div>
+
+          <button class="btn btn-primary mx-auto shadow-sm">
+            Lihat Selengkapnya
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Daftar Sekarang Section -->
+      <section id="daftar-sekarang" class="daftar-sekarang py-2">
+        <div class="container">
+          <div class="card mx-auto text-center">
+            <header>
+              <h2>
+                Ayo daftar sekarang harga mulai dari
+                <span class="d-block text-color-accent">150 Ribuan / Bulan</span>
+              </h2>
+            </header>
+            <p>Kami menerima siswa baru setiap bulan</p>
+            <a href="#form-pendaftaran" class="btn btn-outline-secondary align-items-center mx-auto flex justify-center gap-2" role="button">
+              Daftar Sekarang
+              <i class="fa-solid fa-circle-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section id="kontak" class="kontak py-2">
+        <div class="container">
+          <header class="title text-center">
+            <h2 class="pb-1">
+              Kontak
+              <span class="text-color-accent">Kami</span>
+            </h2>
+          </header>
+
+          <div class="kontak-list flex justify-center gap-2 pb-3 text-center">
+            <!-- Telepon -->
+            <article class="card gap-3 shadow-lg">
+              <div class="card-image">
+                <div class="icon-circle icon-kursus icon-telepon mx-auto">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Telepon</h3>
+                <p class="text-color-secondary pt-1">+62 895331887310</p>
+              </div>
+            </article>
+
+            <!-- Email -->
+            <article class="card gap-3 shadow-lg">
+              <div class="card-image">
+                <div class="icon-circle icon-kursus icon-email mx-auto">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Email</h3>
+                <p class="text-color-secondary pt-1">beebalaraja@gmail.com</p>
+              </div>
+            </article>
+
+            <!-- Jam Operasional -->
+            <article class="card gap-3 shadow-lg">
+              <div class="card-image">
+                <div class="icon-circle icon-kursus icon-timer mx-auto">
+                  <i class="fa-solid fa-business-time"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Jam Operasional</h3>
+                <p class="text-color-secondary pt-1">
+                  Buka setiap hari 08.00 - 17.30
+                  <br />
+                  Hari Libur TUTUP
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="maps flex justify-between gap-4">
+            <!-- Peta Utama -->
+            <div class="w-full">
+              <iframe width="100%" height="450px" style="border: 0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.264906417456!2d106.71798987480898!3d-6.247979993747205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f140a5d9a77b%3A0x2b5157c2e7f32f24!2sUniversitas%20Mercu%20Buana!5e0!3m2!1sen!2sid!4v1721557037186!5m2!1sen!2sid"></iframe>
+            </div>
+
+            <!-- Info Lokasi -->
+            <div class="w-ful flex flex-col gap-2">
+              <!-- Lokasi BEE Balaraja -->
+              <article class="card p-1 shadow-lg">
+                <div class="card-title flex items-center gap-1">
+                  <i class="fa-solid fa-building-circle-exclamation"></i>
+                  <h3>BEE Balaraja</h3>
+                </div>
+                <div class="card-image">
+                  <iframe width="100%" height="200" style="border: 0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.264906417456!2d106.71798987480898!3d-6.247979993747205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f140a5d9a77b%3A0x2b5157c2e7f32f24!2sUniversitas%20Mercu%20Buana!5e0!3m2!1sen!2sid!4v1721557037186!5m2!1sen!2sid"></iframe>
+                </div>
+                <div class="card-content">
+                  <p>
+                    <strong>Alamat:</strong>
+                    Jl. Raya Serang
+                  </p>
+                  <p>
+                    <strong>Kecamatan:</strong>
+                    Telagasari, Kec Balaraja
+                  </p>
+                  <p>
+                    <strong>Kota:</strong>
+                    Kabupaten Tangerang
+                  </p>
+                </div>
+              </article>
+
+              <!-- Lokasi BEE Tambak -->
+              <article class="card p-1 shadow-lg">
+                <div class="card-title flex items-center gap-1">
+                  <i class="fa-solid fa-building-circle-exclamation"></i>
+                  <h3>BEE Tambak</h3>
+                </div>
+                <div class="card-image">
+                  <iframe width="100%" height="200" style="border: 0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.264906417456!2d106.71798987480898!3d-6.247979993747205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f140a5d9a77b%3A0x2b5157c2e7f32f24!2sUniversitas%20Mercu%20Buana!5e0!3m2!1sen!2sid!4v1721557037186!5m2!1sen!2sid"></iframe>
+                </div>
+                <div class="card-content">
+                  <p>
+                    <strong>Alamat:</strong>
+                    Jl. Raya Serang, depan kantor pos
+                  </p>
+                  <p>
+                    <strong>Kecamatan:</strong>
+                    Ciagel, Kec Kibin
+                  </p>
+                  <p>
+                    <strong>Kota:</strong>
+                    Kabupaten Serang
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq-section bg-gray-50 py-8">
+        <div class="container mx-auto max-w-4xl px-4">
+          <header class="mb-6 text-center">
+            <h2 class="text-primary mb-2 text-2xl font-bold">Pertanyaan Umum (FAQ)</h2>
+            <p class="text-sm text-gray-600">Temukan jawaban atas pertanyaan yang sering diajukan tentang Bee Excellent.</p>
+          </header>
+
+          <div class="faq-list space-y-4">
+            <details class="faq-item rounded-md border border-gray-200 bg-white p-4 shadow-sm">
+              <summary class="text-primary cursor-pointer text-base font-semibold hover:underline">Apa saja program yang ditawarkan Bee Excellent?</summary>
+              <div class="mt-2 text-sm text-gray-700">Kami menawarkan program TOEFL, speaking, grammar intensif, dan kelas privat sesuai kebutuhan siswa.</div>
+            </details>
+
+            <details class="faq-item rounded-md border border-gray-200 bg-white p-4 shadow-sm">
+              <summary class="text-primary cursor-pointer text-base font-semibold hover:underline">Apakah tersedia kelas online?</summary>
+              <div class="mt-2 text-sm text-gray-700">Ya, kami menyediakan kelas online interaktif yang dapat diakses melalui Zoom atau Google Meet.</div>
+            </details>
+
+            <details class="faq-item rounded-md border border-gray-200 bg-white p-4 shadow-sm">
+              <summary class="text-primary cursor-pointer text-base font-semibold hover:underline">Bagaimana cara mendaftar?</summary>
+              <div class="mt-2 text-sm text-gray-700">Pendaftaran dapat dilakukan langsung melalui website kami di bagian "Kontak" atau dengan menghubungi admin via WhatsApp.</div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="footer-section bg-light text-dark py-4">
+        <div class="container flex justify-between gap-4">
+          <!-- Tentang Bee Excellent -->
+          <section class="footer-about max-w-md">
+            <img src="assets/image/Logo.png" alt="Logo Bee Excellent" class="mb-2" />
+            <h3 class="mb-1 text-lg font-semibold">Tentang Bee Excellent</h3>
+            <p class="mb-3 text-sm">BEE adalah lembaga pendidikan bahasa Inggris yang menyediakan pengalaman pembelajaran berkualitas tinggi. Kami membantu siswa meraih kemahiran berbahasa Inggris.</p>
+
+            <h4 class="mb-1 text-base font-semibold">Ikuti Media Sosial Kami</h4>
+            <ul class="flex flex-col gap-1">
+              <li>
+                <a href="#" aria-label="Instagram Bee" class="text-sm hover:underline">Instagram</a>
+              </li>
+              <li>
+                <a href="#" aria-label="Facebook Bee" class="text-sm hover:underline">Facebook</a>
+              </li>
+              <li>
+                <a href="#" aria-label="YouTube Bee" class="text-sm hover:underline">YouTube</a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Tautan Cepat -->
+          <nav class="footer-links" aria-label="Navigasi Utama">
+            <h3 class="mb-2 text-lg font-semibold">Tautan Cepat</h3>
+            <ul class="flex flex-col gap-1 text-sm">
+              <li><a href="#home" class="hover:underline">Beranda</a></li>
+              <li><a href="#courses" class="hover:underline">Course</a></li>
+              <li><a href="#about" class="hover:underline">Tentang Kami</a></li>
+              <li><a href="#pricing" class="hover:underline">Biaya</a></li>
+              <li><a href="#contact" class="hover:underline">Kontak</a></li>
+            </ul>
+          </nav>
+
+          <!-- Lokasi -->
+          <section class="footer-locations flex max-w-sm flex-col gap-4 text-sm">
+            <div>
+              <h3 class="mb-1 text-lg font-semibold">Bee Balaraja</h3>
+              <address class="not-italic">
+                <p>Jl. Raya Serang, Telagasari, Kec Balaraja</p>
+                <p>
+                  <a href="tel:+62895331887310" class="hover:underline">+62 895331887310</a>
+                </p>
+                <p>
+                  <a href="mailto:beebalaraja@gmail.com" class="hover:underline">beebalaraja@gmail.com</a>
+                </p>
+              </address>
+            </div>
+
+            <div>
+              <h3 class="mb-1 text-lg font-semibold">Bee Tambak</h3>
+              <address class="not-italic">
+                <p>Jl. Raya Serang, Telagasari, Kec Balaraja</p>
+                <p>
+                  <a href="tel:+62895331887310" class="hover:underline">+62 895331887310</a>
+                </p>
+                <p>
+                  <a href="mailto:beebalaraja@gmail.com" class="hover:underline">beebalaraja@gmail.com</a>
+                </p>
+              </address>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

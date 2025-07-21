@@ -1,0 +1,5 @@
+{
+    "htmlWhitespaceSensitivity": "ignore",
+    "printWidth": 999,
+    "wrapAttributes": "preserve"
+}

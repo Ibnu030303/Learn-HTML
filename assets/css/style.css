@@ -1,0 +1,352 @@
+.icon-circle {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.card:hover,
+.hero button:hover {
+  transform: translateY(-7px);
+}
+
+.kursus .title h2,
+.about .title h2,
+.program-kursus .title h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.hero p,
+.about p,
+.program-kursus p {
+  max-width: 630px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: auto;
+}
+
+.daftar-sekarang .card:hover,
+.kontak .maps .card:hover {
+  transform: translateY(0);
+}
+
+/* NAVIGATION */
+header img {
+  height: 60px;
+}
+
+header nav ul {
+  gap: 2.3rem;
+}
+
+header nav a {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  transition: border-bottom 0.1s;
+}
+
+header nav a:hover {
+  border-bottom: 2px solid var(--text-primary);
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* END OF NAVIGATION */
+
+/* HERO SECTION */
+.hero .btn-secondary {
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 2.7rem;
+  line-height: 1.5;
+}
+
+/* END OF HERO SECTION  */
+
+/* KURSUS SECTION */
+.kursus .kursus-list .card,
+.kontak .kontak-list .card,
+.kursus .kursus-benefits .card {
+  width: 32rem;
+  padding: 2rem 1.7rem;
+}
+
+.kursus .kursus-list .card .card-content h3,
+.kursus .kursus-benefits .card .card-content h3 {
+  font-weight: 500;
+}
+
+.kursus .kursus-list .card .icon-kursus,
+.kontak .kontak-list .card .icon-kursus {
+  background-color: #f4f4f4;
+  color: var(--primary-color);
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.kursus .kursus-list .card .icon-kursus i,
+.kontak .kontak-list .card .icon-kursus i {
+  font-size: 1.8rem;
+}
+
+.kursus .kursus-benefits .card .icon-calendar,
+.kontak .kontak-list .card .icon-telepon {
+  background-color: #38b2ac;
+}
+.kursus .kursus-benefits .card .icon-document,
+.kontak .kontak-list .card .icon-email {
+  background-color: #29b9e7;
+}
+.kursus .kursus-benefits .card .icon-users,
+.kontak .kontak-list .card .icon-timer {
+  background-color: #5b72ee;
+}
+
+/* END OF KURSUS SECTION  */
+
+/* ABOUT BEE */
+.about .about-images-container img {
+  width: 26rem;
+  height: 16rem;
+  filter: brightness(70%);
+}
+
+.about .about-images-container .about-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.about .about-images-container h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.about .about-images-container .btn-about-profile:hover {
+  border: 1px solid var(--primary-color);
+}
+/* END OF ABOUT BEE  */
+
+/* PROGRAM KURSUS */
+.program-kursus .program-kursus-list .card .card-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.program-kursus .program-kursus-list .card .card-content {
+  padding: 0 2rem 1.7rem;
+}
+
+.program-kursus .program-kursus-list .card .card-content .program-kursus-category {
+  gap: 0.5rem;
+}
+
+.program-kursus .program-kursus-list .card .card-content .program-kursus-category span {
+  padding: 0.5rem;
+  background-color: rgba(161, 81, 246, 0.356);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+/* END OF PROGRAM KURSUS */
+
+/* DAFTAR SEKARANG */
+.daftar-sekarang {
+  background-color: #eef4fad5;
+}
+
+.daftar-sekarang .card {
+  padding: 1.5rem min(8rem, 6%);
+  width: 100%;
+  max-width: 670px;
+  background-color: var(--text-primary);
+  color: var(--white-color);
+}
+
+.daftar-sekarang .card header h2 {
+  font-size: clamp(1.5rem, 5vw, 0.8rem);
+}
+
+.daftar-sekarang .card header h2 span {
+  font-size: clamp(2.3rem, 5vw, 1rem);
+  padding-top: 0.8rem;
+}
+/* END OF DAFTAR SEKARANG */
+
+/* ===== FAQ Section ===== */
+.faq-section {
+  background-color: #eef4fad5; /* Light background */
+  padding: 4rem 1rem; /* py-8 px-4 */
+}
+
+.faq-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.faq-section p {
+  font-size: 0.875rem;
+  color: #6b7280; /* text-gray-600 */
+  margin-bottom: 2rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+  transition: all 0.3s ease;
+}
+
+.faq-item summary {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  cursor: pointer;
+  outline: none;
+  list-style: none;
+}
+
+.faq-item[open] {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item summary:hover {
+  text-decoration: underline;
+}
+
+.faq-item div {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563; /* text-gray-700 */
+  line-height: 1.6;
+}
+
+/* Optional: Remove default arrow from summary */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* FOOTER */
+footer {
+  background-color: #252641;
+}
+/* END FOOTER */
+
+/* Responsive Breakpoint */
+@media (max-width: 768px) {
+  .kursus .kursus-list,
+  .kursus .kursus-benefits,
+  .program-kursus .program-kursus-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* NAVIGATION */
+  header .nav-link {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--text-primary);
+    padding: 1rem 0;
+    display: none;
+    border-top: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  header .nav-link.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header nav ul a {
+    color: var(--white-color);
+    font-weight: 500;
+  }
+
+  header nav ul a:hover {
+    color: var(--primary-color);
+    border-bottom: none;
+    transition: all 0.3s;
+  }
+
+  header .nav-link button {
+    width: 300px;
+    margin: auto;
+  }
+  /* END OF NAVIGATION */
+
+  /* HERO SECTION */
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero-btn {
+    flex-direction: column;
+  }
+
+  .hero-btn .btn-primary {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  /* END OF HERO SECTION */
+
+  /* DAFTAR SEKARANG SECTION */
+
+  /* END OF DAFTAR SEKARANG SECTION */
+}

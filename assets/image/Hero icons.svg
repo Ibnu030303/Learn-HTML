@@ -1,0 +1,30 @@
+<svg width="121" height="120" viewBox="0 0 121 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_248_606)">
+<circle cx="60.0354" cy="50" r="20" fill="#925ADF"/>
+</g>
+<g clip-path="url(#clip0_248_606)">
+<path d="M60.8853 38.2396L70.2603 41.9896C70.6249 42.1354 70.9166 42.5729 70.9166 42.9583V46.4167C70.9166 46.9896 70.4478 47.4583 69.8749 47.4583H51.1249C50.552 47.4583 50.0833 46.9896 50.0833 46.4167V42.9583C50.0833 42.5729 50.3749 42.1354 50.7395 41.9896L60.1145 38.2396C60.3228 38.1563 60.677 38.1563 60.8853 38.2396Z" stroke="white" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M70.9166 58.9167H50.0833V55.7917C50.0833 55.2187 50.552 54.75 51.1249 54.75H69.8749C70.4478 54.75 70.9166 55.2187 70.9166 55.7917V58.9167Z" stroke="white" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52.1667 54.75V47.4583" stroke="white" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56.3333 54.75V47.4583" stroke="white" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60.5 54.75V47.4583" stroke="white" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.6667 54.75V47.4583" stroke="white" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M68.8333 54.75V47.4583" stroke="white" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.0417 58.9167H71.9584" stroke="white" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60.5 44.8542C61.3629 44.8542 62.0625 44.1546 62.0625 43.2917C62.0625 42.4287 61.3629 41.7292 60.5 41.7292C59.6371 41.7292 58.9375 42.4287 58.9375 43.2917C58.9375 44.1546 59.6371 44.8542 60.5 44.8542Z" stroke="white" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_d_248_606" x="0.0354004" y="0" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="10"/>
+<feGaussianBlur stdDeviation="20"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.212 0 0 0 0 0.238778 0 0 0 0 0.533333 0 0 0 0.06 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_248_606"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_248_606" result="shape"/>
+</filter>
+<clipPath id="clip0_248_606">
+<rect width="25" height="25" fill="white" transform="translate(48 36)"/>
+</clipPath>
+</defs>
+</svg>
