@@ -18,7 +18,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  padding: 15px;
+  padding: min(15px, 5%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,35 +54,18 @@
   transform: translateY(0);
 }
 
-/* NAVIGATION */
-header img {
-  height: 60px;
+.about,
+.faq-section,
+.daftar-sekarang {
+  background-color: var(--background-color-secondary);
 }
-header nav ul {
-  gap: 2.3rem;
-}
-header nav a {
-  font-size: 1rem;
-  color: var(--text-primary);
-  font-weight: 600;
-  transition: border-bottom 0.1s;
-}
-header nav a:hover {
-  border-bottom: 2px solid var(--text-primary);
-}
-.hamburger {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-/* END OF NAVIGATION */
 
 /* HERO SECTION */
 .hero .btn-secondary {
   font-weight: 600;
 }
 .hero h1 {
-  font-size: clamp(1rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   line-height: 1.5;
 }
 /* END OF HERO SECTION  */
@@ -107,7 +90,7 @@ header nav a:hover {
 }
 .kursus .kursus-list .card .icon-kursus i,
 .kontak .kontak-list .card .icon-kursus i {
-  font-size: 1.8rem;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
 }
 .kursus .kursus-benefits .card .icon-calendar,
 .kontak .kontak-list .card .icon-telepon {
@@ -138,7 +121,7 @@ header nav a:hover {
   color: white;
 }
 .about .about-images-container h4 {
-  font-size: clamp(1.5rem, 2vw, 1.3rem);
+  font-size: clamp(1.2rem, 2vw, 1.3rem);
   font-weight: 400;
 }
 /* END OF ABOUT BEE  */
@@ -170,9 +153,6 @@ header nav a:hover {
 /* END OF PROGRAM KURSUS */
 
 /* DAFTAR SEKARANG */
-.daftar-sekarang {
-  background-color: #eef4fad5;
-}
 .daftar-sekarang .card-daftar {
   background-color: var(--text-primary);
   color: var(--white-color);
@@ -239,9 +219,6 @@ header nav a:hover {
 /* END OF KONTAK */
 
 /* ===== FAQ Section ===== */
-.faq-section {
-  background-color: #eef4fad5;
-}
 .faq-item {
   transition: all 0.3s ease;
 }
@@ -252,31 +229,6 @@ header nav a:hover {
   display: none;
 }
 /* ===== END OF FAQ Section ===== */
-
-/* FOOTER */
-footer {
-  background-color: #252641;
-  color: var(--white-color);
-}
-footer .footer-about {
-  width: 100%;
-  max-width: 400px;
-}
-footer .footer-about h3,
-footer .footer-about h4 {
-  font-size: clamp(1rem, 2vw, 0.9rem);
-}
-footer .footer-about p {
-  font-size: clamp(0.8rem, 2vw, 0.8rem);
-}
-footer a {
-  color: var(--white-color);
-  transition: all 0.3s;
-}
-footer a:hover {
-  color: var(--primary-color);
-}
-/* END FOOTER */
 
 /* Styles for mobile devices (portrait) */
 @media (max-width: 480px) {
@@ -339,34 +291,3 @@ footer a:hover {
 /* Styles for large desktops */
 @media (min-width: 1200px) {
 }
-
-/* Responsive Breakpoint */
-/* @media (max-width: 768px) {
-  .kursus .kursus-list,
-  .kursus .kursus-benefits,
-  .program-kursus .program-kursus-list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  
-
-/* HERO SECTION */
-/* .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-  }
-
-  .hero-btn {
-    flex-direction: column;
-  }
-
-  .hero-btn .btn-primary {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-}  */

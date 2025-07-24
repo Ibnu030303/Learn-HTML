@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEE ~ Course</title>
+    <link rel="stylesheet" href="assets/css/course.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5MlZLA8gCjYPMad/5sARxHNwzP4yJ/GwclGFy7R/6QyF9YxN3wZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <main>
+      <section class="hero-section flex flex-center text-center relative" aria-label="Gambar Header Halaman Kursus">
+        <img src="assets/image/Rectangle 77.png" alt="Ilustrasi latar belakang header yang menarik" />
+        <div class="hero-overlay">
+          <h1>Jelajahi Kursus Kami</h1>
+          <p>Temukan kursus terbaik untuk meningkatkan skill Anda.</p>
+        </div>
+      </section>
+
+      <!-- <div class="container course-page-content">
+        <div class="filter-section">
+          <aside class="filter-box" aria-label="Filter Kursus">
+            <h2>Filter Kursus</h2>
+            <form class="filter-form">
+              <div class="form-group">
+                <label for="kategori" class="filter-label">Kategori:</label>
+                <select id="kategori" name="kategori" class="filter-select">
+                  <option value="">Semua Kategori</option>
+                  <option value="office">Microsoft Office</option>
+                  <option value="english">Bahasa Inggris</option>
+                  <option value="design">Desain Grafis</option>
+                  <option value="toefl">TOEFL & IELTS</option>
+                  <option value="bimbel">Bimbingan Belajar</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <p class="filter-subheading">Tingkat Kesulitan:</p>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="level" value="pemula" />
+                  Pemula
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="level" value="menengah" />
+                  Menengah
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="level" value="lanjutan" />
+                  Lanjutan
+                </label>
+              </div>
+
+              <button type="submit" class="filter-button">Terapkan Filter</button>
+              <button type="reset" class="filter-button filter-button-clear">Bersihkan Filter</button>
+            </form>
+          </aside>
+
+          <section class="course-list" aria-labelledby="course-list-heading">
+            <h2 id="course-list-heading" class="sr-only">Daftar Kursus</h2>
+            <article class="card-course" aria-label="Kursus Bimbingan Belajar">
+              <figure class="card-image">
+                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi Bimbingan Belajar" />
+              </figure>
+              <div class="card-content">
+                <div class="card-category">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <span>Bimbel</span>
+                </div>
+                <h3>Bimbingan Belajar</h3>
+                <p class="card-description">Bimbingan pelajaran sekolah dari SD hingga SMK dengan pengajar berpengalaman.</p>
+                <a href="#" class="button-detail" aria-label="Lihat detail kursus Bimbingan Belajar">
+                  Lihat Detail
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="card-course" aria-label="Kursus Microsoft Office">
+              <figure class="card-image">
+                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi Microsoft Office" />
+              </figure>
+              <div class="card-content">
+                <div class="card-category">
+                  <i class="fa-solid fa-file-excel"></i>
+                  <span>Microsoft Office</span>
+                </div>
+                <h3>Microsoft Office Lengkap</h3>
+                <p class="card-description">Pelajari Word, Excel, PowerPoint dari dasar hingga mahir.</p>
+                <a href="#" class="button-detail" aria-label="Lihat detail kursus Microsoft Office Lengkap">
+                  Lihat Detail
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="card-course" aria-label="Kursus Bahasa Inggris">
+              <figure class="card-image">
+                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi Belajar Bahasa Inggris" />
+              </figure>
+              <div class="card-content">
+                <div class="card-category">
+                  <i class="fa-solid fa-language"></i>
+                  <span>Bahasa Inggris</span>
+                </div>
+                <h3>Bahasa Inggris Percakapan</h3>
+                <p class="card-description">Tingkatkan kemampuan berbicara bahasa Inggris Anda dengan latihan praktis.</p>
+                <a href="#" class="button-detail" aria-label="Lihat detail kursus Bahasa Inggris Percakapan">
+                  Lihat Detail
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="card-course" aria-label="Kursus Desain Grafis">
+              <figure class="card-image">
+                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi Desain Grafis" />
+              </figure>
+              <div class="card-content">
+                <div class="card-category">
+                  <i class="fa-solid fa-pen-nib"></i>
+                  <span>Desain</span>
+                </div>
+                <h3>Desain Grafis Fundamental</h3>
+                <p class="card-description">Dasar-dasar desain grafis menggunakan Adobe Photoshop dan Illustrator.</p>
+                <a href="#" class="button-detail" aria-label="Lihat detail kursus Desain Grafis Fundamental">
+                  Lihat Detail
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="card-course" aria-label="Kursus TOEFL Preparation">
+              <figure class="card-image">
+                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi TOEFL Preparation" />
+              </figure>
+              <div class="card-content">
+                <div class="card-category">
+                  <i class="fa-solid fa-book-open"></i>
+                  <span>TOEFL</span>
+                </div>
+                <h3>TOEFL Preparation Intensif</h3>
+                <p class="card-description">Strategi dan latihan untuk mencapai skor TOEFL yang tinggi.</p>
+                <a href="#" class="button-detail" aria-label="Lihat detail kursus TOEFL Preparation Intensif">
+                  Lihat Detail
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="card-course" aria-label="Kursus Data Science Dasar">
+              <figure class="card-image">
+                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi Data Science" />
+              </figure>
+              <div class="card-content">
+                <div class="card-category">
+                  <i class="fa-solid fa-database"></i>
+                  <span>Data Science</span>
+                </div>
+                <h3>Pengantar Data Science</h3>
+                <p class="card-description">Memahami dasar-dasar ilmu data dan analisis data.</p>
+                <a href="#" class="button-detail" aria-label="Lihat detail kursus Pengantar Data Science">
+                  Lihat Detail
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div> -->
+    </main>
+  </body>
+</html>

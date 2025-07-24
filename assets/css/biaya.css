@@ -1,0 +1,97 @@
+.rekomendasi {
+  background-color: var(--background-color-secondary);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+.biaya-group {
+  padding: 0 10rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  white-space: nowrap;
+}
+thead {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* DAFTAR SEKARANG */
+.daftar-sekarang .card-daftar {
+  background-color: var(--text-primary);
+  color: var(--white-color);
+  padding: 2rem 0;
+}
+.daftar-sekarang .card-daftar h2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+.daftar-sekarang .card-daftar span {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+.daftar-sekarang .card-daftar p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+/* END OF DAFTAR SEKARANG */
+
+.rekomendasi-list .card {
+  padding: 1rem 0.7rem;
+  width: 100%;
+  max-width: 18rem;
+  height: 28rem;
+}
+.rekomendasi .rekomendasi-list .card-image img {
+  width: 100%;
+}
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .biaya-group {
+    padding: 0 1rem;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  table {
+    font-size: 0.9rem;
+    min-width: 600px; /* agar tetap scrollable */
+  }
+
+  .rekomendasi .rekomendasi-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .rekomendasi-list .card {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .daftar-sekarang .card-daftar {
+    padding: 1.5rem 1rem;
+  }
+
+  .daftar-sekarang .card-daftar h2 {
+    font-size: 1.25rem;
+  }
+
+  .daftar-sekarang .card-daftar span {
+    font-size: 1.5rem;
+  }
+
+  .daftar-sekarang .card-daftar p {
+    font-size: 0.9rem;
+  }
+}

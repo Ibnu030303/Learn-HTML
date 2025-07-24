@@ -1,0 +1,430 @@
+:root {
+  --primary-color: #007baf; /* Blue */
+  --secondary-color: #00567a; /* Darker Blue */
+  --accent-color: #f7b200; /* Yellow/Orange for accents */
+  --bg-light: #f9fbfd; /* Very light blue-gray background */
+  --bg-filter-box: #eef7fb; /* Light blue for filter box */
+  --text-dark: #2c3e50; /* Darker text */
+  --text-muted: #7f8c8d; /* Muted text for descriptions */
+  --border-color: #ddebf1; /* Light border color */
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --card-hover-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  --radius: 12px;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif; /* Added Poppins for a modern look */
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Accessibility: Visually hidden content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 400px; /* Adjusted height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  color: white; /* Text color over the image */
+  background-color: rgba(0, 0, 0, 0.3); /* Slight overlay for readability */
+  padding: 2rem 1rem;
+  border-radius: var(--radius);
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Container for main content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* Increased horizontal padding */
+}
+
+.course-page-content {
+  margin-top: -150px; /* Pull content up over the hero image */
+  position: relative;
+  z-index: 3;
+}
+
+/* Filter and Course List Section */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg); /* Increased gap */
+  background-color: white;
+  border-radius: var(--radius);
+  padding: var(--spacing-lg); /* Increased padding */
+  box-shadow: var(--card-shadow);
+  align-items: flex-start; /* Align items to the top */
+}
+
+.filter-box {
+  flex: 0 0 280px; /* Fixed width for filter box on larger screens */
+  background-color: var(--bg-filter-box);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+}
+
+.filter-box h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Increased gap between form groups */
+}
+
+.form-group {
+  margin-bottom: 0.5rem;
+}
+
+.filter-label {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px; /* Slightly more rounded */
+  background-color: white;
+  font-size: 1rem;
+  color: var(--text-dark);
+  appearance: none; /* Remove default arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23666' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 175, 0.2);
+}
+
+.filter-subheading {
+  margin-top: 0; /* Adjusted margin */
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Increased gap */
+  font-size: 1rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  margin-bottom: 0.5rem; /* Space between checkboxes */
+}
+
+.filter-checkbox input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-checkbox input[type="checkbox"]::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--primary-color);
+  border-radius: 2px;
+}
+
+.filter-checkbox input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.filter-checkbox input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 175, 0.2);
+}
+
+.filter-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem; /* Space above buttons */
+}
+
+.filter-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.filter-button-clear {
+  background-color: #e74c3c; /* Red for clear button */
+  margin-top: 0.75rem;
+}
+
+.filter-button-clear:hover {
+  background-color: #c0392b;
+}
+
+/* Course List */
+.course-list {
+  flex: 1; /* Allows it to take remaining space */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted min-width */
+  gap: var(--spacing-md); /* Consistent gap */
+}
+
+.card-course {
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Ensures image corners are rounded with card */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-course:hover {
+  transform: translateY(-5px); /* Increased lift on hover */
+  box-shadow: var(--card-hover-shadow);
+}
+
+.card-image {
+  height: 180px; /* Fixed height for consistent image size */
+  overflow: hidden;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card-course:hover .card-image img {
+  transform: scale(1.05); /* Subtle zoom on image hover */
+}
+
+.card-content {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows content to expand and push button to bottom */
+}
+
+.card-category {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.card-category i {
+  color: var(--accent-color); /* Icon color */
+  font-size: 1.1rem;
+}
+
+.card-content h3 {
+  margin: 0 0 0.5rem;
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  flex-grow: 1; /* Allows description to take up available space */
+}
+
+.button-detail {
+  display: inline-flex; /* Use flex to align icon and text */
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start; /* Align button to the start (left) */
+}
+
+.button-detail:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.button-detail i {
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .filter-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .filter-box {
+    flex: 1 1 auto; /* Allow filter box to take full width */
+  }
+
+  .course-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 300px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .course-page-content {
+    margin-top: -100px;
+  }
+
+  .filter-section {
+    padding: 1.5rem;
+  }
+
+  .filter-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    height: 250px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .course-page-content {
+    margin-top: -70px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .filter-section {
+    padding: 1rem;
+  }
+
+  .filter-box {
+    padding: 1rem;
+  }
+
+  .filter-box h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .course-list {
+    grid-template-columns: 1fr; /* Stack cards on very small screens */
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .button-detail {
+    width: 100%; /* Full width button on small screens */
+    justify-content: center;
+  }
+}
