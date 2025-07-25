@@ -177,6 +177,7 @@ footer {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 2rem;
+  border: 2px solid red;
 }
 
 /* =======================
@@ -476,6 +477,10 @@ footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .px-1 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -487,6 +492,10 @@ footer {
 .px-3 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+.px-4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .pt-1 {
   padding-top: 1rem;

@@ -1,12 +1,5 @@
-.rekomendasi {
-  background-color: var(--background-color-secondary);
-}
-
 .table-wrapper {
   overflow-x: auto;
-}
-.biaya-group {
-  padding: 0 10rem;
 }
 table {
   border-collapse: collapse;
@@ -27,7 +20,8 @@ thead {
 .daftar-sekarang .card-daftar {
   background-color: var(--text-primary);
   color: var(--white-color);
-  padding: 2rem 0;
+  width: 100%;
+  padding: min(2.5rem, 4%);
 }
 .daftar-sekarang .card-daftar h2 {
   font-size: clamp(1.2rem, 3vw, 2rem);
@@ -40,26 +34,41 @@ thead {
 }
 /* END OF DAFTAR SEKARANG */
 
-.rekomendasi-list .card {
-  padding: 1rem 0.7rem;
-  width: 100%;
-  max-width: 18rem;
-  height: 28rem;
+/* rekomendasi List */
+.rekomendasi-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
 }
-.rekomendasi .rekomendasi-list .card-image img {
-  width: 100%;
+.rekomendasi-list .card {
+  padding: 0;
+  background-color: #ffffff;
+}
+.rekomendasi-list .card .card-content {
+  padding: 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card-image {
+  overflow: hidden;
+  height: 240px;
 }
 .card-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  aspect-ratio: 1/1;
+  border-radius: 1rem 1rem 0 0;
+}
+.card:hover .card-image img {
+  transform: scale(1.02); /* Subtle zoom on image hover */
 }
 
 @media (max-width: 768px) {
-  .biaya-group {
-    padding: 0 1rem;
-  }
-
   .table-wrapper {
     overflow-x: auto;
   }
@@ -67,31 +76,5 @@ thead {
   table {
     font-size: 0.9rem;
     min-width: 600px; /* agar tetap scrollable */
-  }
-
-  .rekomendasi .rekomendasi-list {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .rekomendasi-list .card {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .daftar-sekarang .card-daftar {
-    padding: 1.5rem 1rem;
-  }
-
-  .daftar-sekarang .card-daftar h2 {
-    font-size: 1.25rem;
-  }
-
-  .daftar-sekarang .card-daftar span {
-    font-size: 1.5rem;
-  }
-
-  .daftar-sekarang .card-daftar p {
-    font-size: 0.9rem;
   }
 }

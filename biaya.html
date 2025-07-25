@@ -106,14 +106,15 @@
         </nav>
       </div>
     </header>
+
     <main>
       <!-- Biaya Kursus Section -->
-      <section id="biaya-kursus" class="py-3">
-        <div class="container flex flex-col flex-center gap-2">
-          <h2 class="text-color-accent">Daftar Biaya Kursus</h2>
+      <section id="biaya-kursus" class="py-2">
+        <div class="container flex flex-col flex-center gap-2 px-4">
+          <h2>Daftar Biaya Kursus</h2>
 
           <!-- A. Bimbel -->
-          <section class="biaya-group border-2 w-full">
+          <section class="biaya-group w-full px-4 md-p-0">
             <h3 class="mb-1">A. Bimbel</h3>
             <div class="table-wrapper">
               <table class="table mx-auto">
@@ -150,7 +151,7 @@
           </section>
 
           <!-- B. Bahasa Inggris -->
-          <section class="biaya-group border-2 w-full">
+          <section class="biaya-group w-full px-4 md-p-0">
             <h3 class="mb-1">B. Bahasa Inggris</h3>
             <div class="table-wrapper">
               <table class="table mx-auto">
@@ -211,7 +212,7 @@
           </section>
 
           <!-- C. Desain Grafis -->
-          <section class="biaya-group border-2 w-full">
+          <section class="biaya-group w-full px-4 md-p-0">
             <h3 class="mb-1">C. Desain Grafis</h3>
             <div class="table-wrapper">
               <table class="table mx-auto">
@@ -248,7 +249,7 @@
           </section>
 
           <!-- D. Microsoft Office -->
-          <section class="biaya-group border-2 w-full">
+          <section class="biaya-group w-full px-4 md-p-0">
             <h3 class="mb-1">D. Microsoft Office</h3>
             <div class="table-wrapper">
               <table class="table mx-auto">
@@ -286,9 +287,9 @@
         </div>
       </section>
 
-      <!-- Daftar Sekarang -->
-      <section id="daftar-sekarang" class="daftar-sekarang py-3">
-        <div class="container px-3">
+      <!-- Daftar Sekarang Section -->
+      <section id="daftar-sekarang" class="daftar-sekarang py-3 md-p-0 bg-secondary">
+        <div class="container px-4">
           <div class="text-center card-daftar radius-lg mx-auto">
             <h2>
               Mulai perjalanan belajarmu sekarang!
@@ -296,7 +297,7 @@
               <span class="d-block text-color-accent">Investasi mulai dari 150 ribuan per bulan</span>
             </h2>
             <p class="pt-1 pb-2">Pendaftaran dibuka setiap bulan. Yuk, amankan slot belajarmu dan gabung bersama ratusan siswa lainnya!</p>
-            <a href="#form-pendaftaran" class="btn btn-outline-secondary" role="button">
+            <a href="#form-pendaftaran" class="btn btn-outline-secondary btn-small" role="button">
               Daftar Sekarang & Ambil Slotmu
               <i class="fa-solid fa-circle-chevron-right"></i>
             </a>
@@ -305,73 +306,75 @@
       </section>
 
       <!-- Rekomendasi Program -->
-      <section class="rekomendasi py-3">
+      <section class="rekomendasi py-3 bg-color">
         <div class="container">
-          <header class="title border-2 w-full mb-2">
-            <h2>Rekomendasi Pilihan Program Untuk Kamu</h2>
+          <header class="title w-full mb-2">
+            <h2>
+              Rekomendasi Pilihan
+              <span class="text-color-accent">Program Untuk Kamu</span>
+            </h2>
           </header>
 
-          <div class="rekomendasi-list flex flex-center flex-wrap-md gap-1 border-2 w-full">
-            <!-- Card 1 -->
-            <article class="card shadow-sm" aria-label="Program Bimbel">
+          <section class="rekomendasi-list mb-2" aria-label="Daftar Kursus">
+            <!-- Template card, duplikasikan sesuai kebutuhan -->
+            <article class="card shadow-sm" aria-label="Kursus Bahasa Inggris">
               <figure class="card-image">
-                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi program bimbel" />
+                <img src="assets/image/Rectangle 34 (1).png" alt="Ilustrasi Kursus Bahasa Inggris" />
               </figure>
-              <div class="card-content flex flex-col gap-1">
-                <p class="flex align-items-center">
-                  <img src="assets/image/Group 259.svg" alt="Icon Bimbel" />
-                  Bimbel
-                </p>
-                <h3>Bimbingan Belajar</h3>
-                <p class="text-color-secondary">Bimbingan pelajaran sekolah dari SD hingga SMK.</p>
+              <div class="card-content">
+                <div class="card-category">
+                  <i class="fa-solid fa-language"></i>
+                  <span>Bahasa Inggris</span>
+                </div>
+                <h3>Kursus Bahasa Inggris</h3>
+                <p class="text-color-secondary">Pelajari speaking, grammar, dan listening untuk semua level.</p>
               </div>
             </article>
 
-            <!-- Card 2 -->
-            <article class="card shadow-sm" aria-label="Program Bahasa Inggris">
+            <article class="card shadow-sm" aria-label="Kursus Desain Grafis">
               <figure class="card-image">
-                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi program bahasa Inggris" />
+                <img src="assets/image/Rectangle 34.png" alt="Ilustrasi Desain Grafis" />
               </figure>
-              <div class="card-content flex flex-col gap-1">
-                <p class="flex align-items-center">
-                  <img src="assets/image/Group 259.svg" alt="Icon English" />
-                  English
-                </p>
-                <h3>Basic English & Conversation</h3>
-                <p class="text-color-secondary">Bangun fondasi bahasa Inggris dari nol! Cocok untuk semua usia.</p>
+              <div class="card-content">
+                <div class="card-category">
+                  <i class="fa-solid fa-pen-nib"></i>
+                  <span>Desain Grafis</span>
+                </div>
+                <h3>Desain Grafis</h3>
+                <p class="text-color-secondary">Kuasi Canva, CorelDraw & Photoshop untuk konten kreatif.</p>
               </div>
             </article>
 
-            <!-- Card 3 -->
-            <article class="card shadow-sm" aria-label="Program Microsoft Office">
+            <article class="card shadow-sm" aria-label="Kursus Desain Grafis">
               <figure class="card-image">
-                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi program Microsoft Office" />
+                <img src="assets/image/Rectangle 32.png" alt="Ilustrasi Desain Grafis" />
               </figure>
-              <div class="card-content flex flex-col gap-1">
-                <p class="flex align-items-center">
-                  <img src="assets/image/Group 259.svg" alt="Icon Office" />
-                  Microsoft Office
-                </p>
-                <h3>Microsoft Office</h3>
-                <p class="text-color-secondary">Kuasai Word, Excel, dan PowerPoint lengkap dengan praktik.</p>
+              <div class="card-content">
+                <div class="card-category">
+                  <i class="fa-solid fa-pen-nib"></i>
+                  <span>Desain Grafis</span>
+                </div>
+                <h3>Desain Grafis</h3>
+                <p class="text-color-secondary">Dapatkan bimbingan intensif untuk semua mata pelajaran dari SD hingga SMA/SMK. Termasuk bantuan PR, persiapan ujian, dan materi remedial.</p>
               </div>
             </article>
 
-            <!-- Card 4 -->
-            <article class="card shadow-sm" aria-label="Program Desain Grafis">
+            <article class="card shadow-sm" aria-label="Kursus Desain Grafis">
               <figure class="card-image">
-                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi program desain grafis" />
+                <img src="assets/image/Rectangle 33.png" alt="Ilustrasi Desain Grafis" />
               </figure>
-              <div class="card-content flex flex-col gap-1">
-                <p class="flex align-items-center">
-                  <img src="assets/image/Group 259.svg" alt="Icon Desain" />
-                  Desain Grafis
-                </p>
-                <h3>Photoshop</h3>
-                <p class="text-color-secondary">Belajar Photoshop dari dasar untuk kebutuhan kreatif.</p>
+              <div class="card-content">
+                <div class="card-category">
+                  <i class="fa-solid fa-pen-nib"></i>
+                  <span>Desain Grafis</span>
+                </div>
+                <h3>Desain Grafis</h3>
+                <p class="text-color-secondary">Kuasi Canva, CorelDraw & Photoshop untuk konten kreatif.</p>
               </div>
             </article>
-          </div>
+
+            <!-- Tambahkan kursus lain di sini -->
+          </section>
         </div>
       </section>
     </main>
@@ -380,20 +383,26 @@
       <div class="container footer-container">
         <!-- Tentang Bee Excellent -->
         <section class="footer-about">
-          <img src="assets/image/Logo.png" alt="Logo Bee Excellent" class="footer-logo" />
+          <img src="assets/image/Group 444.png" alt="Logo Bee Excellent" class="footer-logo" />
           <h3>Tentang Bee Excellent</h3>
           <p>Bee Excellent (BEE) adalah lembaga kursus yang menggabungkan pengajaran berkualitas, metode menyenangkan, dan tutor berpengalaman.</p>
 
           <h4>Ikuti Media Sosial Kami:</h4>
           <ul class="footer-social">
-            <li><a href="#" aria-label="Instagram Bee">Instagram</a></li>
-            <li><a href="#" aria-label="Facebook Bee">Facebook</a></li>
-            <li><a href="#" aria-label="YouTube Bee">YouTube</a></li>
+            <li>
+              <a href="#" aria-label="Instagram Bee"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Facebook Bee"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="YouTube Bee"><i class="fa-brands fa-youtube"></i></a>
+            </li>
           </ul>
         </section>
 
         <!-- Course -->
-        <nav class="footer-links px-2" aria-label="Navigasi Course">
+        <nav class="footer-links px-2 md-p-0" aria-label="Navigasi Course">
           <h3>Course</h3>
           <ul>
             <li>Bimbel</li>
@@ -407,12 +416,12 @@
         <nav class="footer-links" aria-label="Navigasi Utama">
           <h3>Tautan Cepat</h3>
           <ul>
-            <li><a href="#home">Beranda</a></li>
-            <li><a href="#courses">Course</a></li>
-            <li><a href="#about">Tentang Kami</a></li>
-            <li><a href="#pricing">Biaya</a></li>
+            <li><a href="">Beranda</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="profile.html">Tentang Kami</a></li>
+            <li><a href="biaya.html">Biaya</a></li>
             <li><a href="#contact">Kontak</a></li>
-            <li><a href="#contact">TOEFL Gratis</a></li>
+            <li><a href="#about">TOEFL Gratis</a></li>
           </ul>
         </nav>
 
@@ -456,5 +465,7 @@
       </div>
       <p class="text-center mt-2 py-1" style="background-color: black">Copy Right By Ibnu Dev 2025.</p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
