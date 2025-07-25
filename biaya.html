@@ -85,6 +85,27 @@
     </script>
   </head>
   <body>
+    <!-- Header -->
+    <header class="shadow-soft">
+      <div class="flex container justify-between align-items-center">
+        <a href="index.html" aria-label="Halaman Utama">
+          <img src="assets/image/Logo.png" alt="Logo BEE" />
+        </a>
+        <button id="hamburger" class="hamburger" aria-label="Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="navMenu" class="nav-link" aria-label="Navigasi Utama">
+          <ul class="flex flex-center">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="course.html" class="active">Course</a></li>
+            <li><a href="profile.html">Tentang Kami</a></li>
+            <li><a href="biaya.html">Biaya</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><button class="btn btn-primary shadow-sm">Login</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
       <!-- Biaya Kursus Section -->
       <section id="biaya-kursus" class="py-3">
@@ -354,5 +375,86 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer-section pt-2">
+      <div class="container footer-container">
+        <!-- Tentang Bee Excellent -->
+        <section class="footer-about">
+          <img src="assets/image/Logo.png" alt="Logo Bee Excellent" class="footer-logo" />
+          <h3>Tentang Bee Excellent</h3>
+          <p>Bee Excellent (BEE) adalah lembaga kursus yang menggabungkan pengajaran berkualitas, metode menyenangkan, dan tutor berpengalaman.</p>
+
+          <h4>Ikuti Media Sosial Kami:</h4>
+          <ul class="footer-social">
+            <li><a href="#" aria-label="Instagram Bee">Instagram</a></li>
+            <li><a href="#" aria-label="Facebook Bee">Facebook</a></li>
+            <li><a href="#" aria-label="YouTube Bee">YouTube</a></li>
+          </ul>
+        </section>
+
+        <!-- Course -->
+        <nav class="footer-links px-2" aria-label="Navigasi Course">
+          <h3>Course</h3>
+          <ul>
+            <li>Bimbel</li>
+            <li>Bahasa Inggris</li>
+            <li>Microsoft Office</li>
+            <li>Desain Grafis</li>
+          </ul>
+        </nav>
+
+        <!-- Tautan Cepat -->
+        <nav class="footer-links" aria-label="Navigasi Utama">
+          <h3>Tautan Cepat</h3>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#courses">Course</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#pricing">Biaya</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><a href="#contact">TOEFL Gratis</a></li>
+          </ul>
+        </nav>
+
+        <!-- Lokasi -->
+        <section class="footer-locations">
+          <div>
+            <h3>Bee Balaraja</h3>
+            <address>
+              <p>
+                <i class="fa-solid fa-map-pin"></i>
+                Jl. Raya Serang, Telagasari, Kec. Balaraja
+              </p>
+              <p>
+                <i class="fa-solid fa-phone-volume"></i>
+                +62 895331887310
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                beebalaraja@gmail.com
+              </p>
+            </address>
+          </div>
+          <div>
+            <h3>Bee Tambak</h3>
+            <address>
+              <p>
+                <i class="fa-solid fa-map-pin"></i>
+                Jl. Raya Serang, depan Kantor Pos Tambak
+              </p>
+              <p>
+                <i class="fa-solid fa-phone-volume"></i>
+                +62 895331887310
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                beebalaraja@gmail.com
+              </p>
+            </address>
+          </div>
+        </section>
+      </div>
+      <p class="text-center mt-2 py-1" style="background-color: black">Copy Right By Ibnu Dev 2025.</p>
+    </footer>
   </body>
 </html>

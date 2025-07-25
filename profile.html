@@ -4,17 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil BEE Excellent</title>
+    <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/profile.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
+    <!-- Header -->
+    <header class="shadow-soft">
+      <div class="flex container justify-between align-items-center">
+        <a href="index.html" aria-label="Halaman Utama">
+          <img src="assets/image/Logo.png" alt="Logo BEE" />
+        </a>
+        <button id="hamburger" class="hamburger" aria-label="Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="navMenu" class="nav-link" aria-label="Navigasi Utama">
+          <ul class="flex flex-center">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="course.html" class="active">Course</a></li>
+            <li><a href="profile.html">Tentang Kami</a></li>
+            <li><a href="biaya.html">Biaya</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><button class="btn btn-primary shadow-sm">Login</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <main>
-      <section id="tentang-kami" class="section">
-        <div class="container">
-          <!-- Tentang BEE -->
-          <div class="card">
-            <h2 class="section-title">Tentang BEE (Bright Excellent English)</h2>
-            <div class="grid-2">
-              <div class="info-block">
+      <section id="tentang-kami" class="tentang-kami py-3">
+        <div class="container px-3">
+          <div class="tentang-wrapper shadow-sm">
+            <img src="assets/image/Group 368 (1).png" alt="Logo BEE Excellent" class="tentang-image" />
+
+            <div class="tentang-content">
+              <h3 class="tentang-title">BEE Excellent</h3>
+              <p class="tentang-desc">BEE Excellent adalah Lembaga Kursus dan Pelatihan (LKP) yang fokus dalam pengembangan keterampilan bahasa Inggris, bimbingan belajar, dan komputer. Dengan tenaga pengajar profesional dan berpengalaman sejak 1998, kami berkomitmen mencetak generasi unggul dan siap bersaing.</p>
+
+              <div class="tentang-info">
                 <p>
                   <strong>Jenis Lembaga:</strong>
                   LKP (Lembaga Kursus dan Pelatihan)
@@ -28,54 +56,145 @@
                   K5660014
                 </p>
                 <p>
-                  <strong>No. SK Pendirian Operasional:</strong>
+                  <strong>No. SK Operasional:</strong>
                   421.9/Kep.228-Disdik
                 </p>
                 <p>
                   <strong>Alamat:</strong>
                   <br />
-                  Jl. Raya Serang Km 24, Balaraja - Tangerang - Banten,
+                  Jl. Raya Serang Km 24, Balaraja - Tangerang - Banten
                   <br />
                   Kode Pos: 15610
                 </p>
               </div>
-              <div class="info-block">
-                <p><strong>Kontak Resmi:</strong></p>
-                <p>
-                  Telepon:
-                  <a href="tel:081213109773">0812-1310-9773</a>
-                </p>
-                <p>
-                  WhatsApp:
-                  <a href="https://wa.me/6288213665122">0882-1366-5122</a>
-                </p>
-                <p>
-                  Email:
-                  <a href="mailto:bee@ayokursusdibee.my.id">bee@ayokursusdibee.my.id</a>
-                </p>
-                <p>
-                  Website:
-                  <a href="https://www.ayokursusdibee.my.id" target="_blank">www.ayokursusdibee.my.id</a>
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <!-- Tentang Instruktur -->
-          <div class="card">
-            <h2 class="section-title">Tentang Instruktur</h2>
-            <div class="grid-2 align-center">
-              <div class="info-block">
-                <p>Instruktur di BEE merupakan tenaga profesional dan berpengalaman dalam bidang pengajaran bahasa Inggris maupun komputer. Seluruh instruktur telah melalui proses seleksi ketat dan pelatihan internal untuk menjamin kualitas pembelajaran.</p>
-                <p>Beberapa instruktur juga memiliki sertifikasi resmi seperti TOEFL, TOEIC, serta pengalaman mengajar di lembaga pendidikan formal dan non-formal.</p>
-              </div>
-              <div>
-                <img src="/img/instruktur-bee.jpg" alt="Instruktur BEE" class="img-rounded" />
+              <div class="sosial-media">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="profil-guru" class="profil-guru py-3">
+        <div class="container">
+          <h2 class="mb-2">Profil Pengajar</h2>
+          <div class="guru-grid">
+            <div class="card-guru text-center">
+              <img src="assets/image/guru.jpg" alt="Sudianto, M.Pd." />
+              <h4>Sudianto, M.Pd.</h4>
+              <p>Instruktur Bahasa Inggris sekaligus pendiri BEE Balaraja. Berpengalaman mengajar sejak 1998 di berbagai perusahaan dan perguruan tinggi.</p>
+            </div>
+
+            <div class="card-guru text-center">
+              <img src="assets/image/guru.jpg" alt="Nur Azizah Deviani, M.Pd." />
+              <h4>Nur Azizah Deviani, M.Pd.</h4>
+              <p>Instruktur Bahasa Inggris & Bimbel yang profesional dan sabar</p>
+            </div>
+
+            <div class="card-guru text-center">
+              <img src="assets/image/guru.jpg" alt="Tanto Sugito, S.Pd." />
+              <h4>Tanto Sugito, S.Pd.</h4>
+              <p>Instruktur Microsoft & Desain dengan strategi mengajar yang efektif, sabar, dan profesional.</p>
+            </div>
+
+            <div class="card-guru text-center">
+              <img src="assets/image/guru.jpg" alt="Nurika Fitriani, M.Pd." />
+              <h4>Nurika Fitriani, M.Pd.</h4>
+              <p>Instruktur Bimbel dengan bidang Matematika dan Fisika yang sangat profesional dan berpengalaman di bidangnya.</p>
+            </div>
+
+            <div class="card-guru text-center">
+              <img src="assets/image/guru.jpg" alt="Asih Suminarsih, S.Pd." />
+              <h4>Asih Suminarsih, S.Pd.</h4>
+              <p>Staff Administrasi</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer-section pt-2">
+      <div class="container footer-container">
+        <!-- Tentang Bee Excellent -->
+        <section class="footer-about">
+          <img src="assets/image/Logo.png" alt="Logo Bee Excellent" class="footer-logo" />
+          <h3>Tentang Bee Excellent</h3>
+          <p>Bee Excellent (BEE) adalah lembaga kursus yang menggabungkan pengajaran berkualitas, metode menyenangkan, dan tutor berpengalaman.</p>
+
+          <h4>Ikuti Media Sosial Kami:</h4>
+          <ul class="footer-social">
+            <li><a href="#" aria-label="Instagram Bee">Instagram</a></li>
+            <li><a href="#" aria-label="Facebook Bee">Facebook</a></li>
+            <li><a href="#" aria-label="YouTube Bee">YouTube</a></li>
+          </ul>
+        </section>
+
+        <!-- Course -->
+        <nav class="footer-links px-2" aria-label="Navigasi Course">
+          <h3>Course</h3>
+          <ul>
+            <li>Bimbel</li>
+            <li>Bahasa Inggris</li>
+            <li>Microsoft Office</li>
+            <li>Desain Grafis</li>
+          </ul>
+        </nav>
+
+        <!-- Tautan Cepat -->
+        <nav class="footer-links" aria-label="Navigasi Utama">
+          <h3>Tautan Cepat</h3>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#courses">Course</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#pricing">Biaya</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><a href="#contact">TOEFL Gratis</a></li>
+          </ul>
+        </nav>
+
+        <!-- Lokasi -->
+        <section class="footer-locations">
+          <div>
+            <h3>Bee Balaraja</h3>
+            <address>
+              <p>
+                <i class="fa-solid fa-map-pin"></i>
+                Jl. Raya Serang, Telagasari, Kec. Balaraja
+              </p>
+              <p>
+                <i class="fa-solid fa-phone-volume"></i>
+                +62 895331887310
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                beebalaraja@gmail.com
+              </p>
+            </address>
+          </div>
+          <div>
+            <h3>Bee Tambak</h3>
+            <address>
+              <p>
+                <i class="fa-solid fa-map-pin"></i>
+                Jl. Raya Serang, depan Kantor Pos Tambak
+              </p>
+              <p>
+                <i class="fa-solid fa-phone-volume"></i>
+                +62 895331887310
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                beebalaraja@gmail.com
+              </p>
+            </address>
+          </div>
+        </section>
+      </div>
+      <p class="text-center mt-2 py-1" style="background-color: black">Copy Right By Ibnu Dev 2025.</p>
+    </footer>
   </body>
 </html>

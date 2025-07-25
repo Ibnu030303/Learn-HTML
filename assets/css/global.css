@@ -45,17 +45,27 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
   color: var(--text-primary);
-  scroll-behavior: smooth;
   line-height: 1.6;
 }
 
+.bg-color {
+  background-color: var(--background-color);
+}
+.bg-secondary {
+  background-color: var(--background-color-secondary);
+}
+
 /* NAVIGATION */
+header {
+  padding: 0.5rem 0;
+}
 header img {
   height: 60px;
 }
@@ -78,30 +88,86 @@ header nav a:hover {
 }
 /* END OF NAVIGATION */
 
-/* FOOTER */
+/* FOOTER STYLES */
 footer {
   background-color: #252641;
   color: var(--white-color);
 }
-footer .footer-about {
-  width: 100%;
-  max-width: 400px;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
 }
-footer .footer-about h3,
-footer .footer-about h4 {
-  font-size: clamp(1rem, 2vw, 0.9rem);
+.footer-logo {
+  max-width: 160px;
+  margin-bottom: 1rem;
 }
-footer .footer-about p {
-  font-size: clamp(0.8rem, 2vw, 0.8rem);
+.footer-about {
+  flex: 1 1 280px;
 }
-footer a {
+.footer-about h3,
+.footer-links h3,
+.footer-locations h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
   color: var(--white-color);
-  transition: all 0.3s;
 }
-footer a:hover {
+.footer-about p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+  line-height: 1.6;
+}
+.footer-social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+.footer-social li a {
+  color: var(--white-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+.footer-social li a:hover {
   color: var(--primary-color);
 }
-/* END FOOTER */
+.footer-links {
+  flex: 1 1 160px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+.footer-links a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+.footer-locations {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer-locations address {
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--white-color);
+}
+.footer-locations i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+}
 
 /* =======================
    CONTAINER
@@ -111,7 +177,6 @@ footer a:hover {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 2rem;
-  border: 2px solid red;
 }
 
 /* =======================
@@ -255,6 +320,9 @@ footer a:hover {
 .text-color-accent {
   color: var(--text-accent);
 }
+.text-color-black {
+  color: var(--black-color);
+}
 
 /* =======================
    SPACING SYSTEM
@@ -316,6 +384,9 @@ footer a:hover {
 /* Margin Bottom */
 .mb-0 {
   margin-bottom: 0;
+}
+.mb-0-5 {
+  margin-bottom: 0.5rem;
 }
 .mb-1 {
   margin-bottom: 1rem;
@@ -620,6 +691,61 @@ footer a:hover {
   .container {
     padding: 0 1rem;
   }
+
+  /* NAVIGATION */
+  header .nav-link {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--text-primary);
+    padding: 1rem 0;
+    z-index: 50;
+    display: none;
+    border-top: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  header .nav-link.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  header nav ul a {
+    color: var(--white-color);
+    font-weight: 500;
+  }
+  header nav ul a:hover {
+    color: var(--primary-color);
+    border-bottom: none;
+    transition: all 0.3s;
+  }
+  header .nav-link button {
+    width: 300px;
+    margin: auto;
+  }
+  /* END OF NAVIGATION */
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-about,
+  .footer-links,
+  .footer-locations {
+    width: 100%;
+  }
+  /* END OF FOOTER */
+
   /* =======================
    FLEX & GRID SYSTEM
 ========================= */
@@ -667,6 +793,21 @@ footer a:hover {
 
   .md-w-full {
     width: 100%;
+  }
+  .md-w-50 {
+    width: 50%;
+  }
+  .md-w-60 {
+    width: 60%;
+  }
+  .md-w-70 {
+    width: 70%;
+  }
+  .md-px-1 {
+    padding: 0 1rem;
+  }
+  .md-py-2 {
+    padding: 2rem 0;
   }
   .md-p-0 {
     padding: 0 0;

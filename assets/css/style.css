@@ -104,7 +104,6 @@
 .kontak .kontak-list .card .icon-timer {
   background-color: #5b72ee;
 }
-
 /* END OF KURSUS SECTION  */
 
 /* ABOUT BEE */
@@ -157,7 +156,6 @@
   background-color: var(--text-primary);
   color: var(--white-color);
   width: 100%;
-  max-width: 800px;
   padding: min(3rem, 5%);
 }
 .daftar-sekarang .card-daftar h2 {
@@ -190,32 +188,6 @@
 .kontak .maps .info-location .card-content p {
   font-size: 0.8rem;
 }
-/* .kontak .maps {
-  gap: 7rem;
-}
-.kontak .kontak-list {
-  width: 100%;
-  gap: 5rem;
-  padding: 0 7rem;
-}
-.kontak .maps .info-location {
-  width: 100%;
-  max-width: 30%;
-}
-.kontak .maps .info-location .card .card-title {
-  gap: 0.3rem;
-}
-.kontak .maps .info-location .card .card-title h3 {
-  font-size: 1rem;
-  font-weight: 500;
-}
-.kontak .maps .info-location .card .card-content p {
-  font-weight: 400;
-  font-size: 0.8rem;
-}
-.kontak .maps .info-location .card .card-image frame {
-  border-radius: var(--border-radius);
-} */
 /* END OF KONTAK */
 
 /* ===== FAQ Section ===== */
@@ -236,53 +208,6 @@
 
 /* Styles for tablets and larger devices */
 @media (max-width: 768px) {
-  /* NAVIGATION */
-  header .nav-link {
-    position: absolute;
-    top: 72px;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    background-color: var(--text-primary);
-    padding: 1rem 0;
-    display: none;
-    border-top: 1px solid #eee;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
-
-  header .nav-link.show {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-    background: none;
-    border: none;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  header nav ul a {
-    color: var(--white-color);
-    font-weight: 500;
-  }
-
-  header nav ul a:hover {
-    color: var(--primary-color);
-    border-bottom: none;
-    transition: all 0.3s;
-  }
-
-  header .nav-link button {
-    width: 300px;
-    margin: auto;
-  }
-  /* END OF NAVIGATION */
-
   .kontak .maps .location-frame {
     height: 400px;
   }
