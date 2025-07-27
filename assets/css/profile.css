@@ -1,101 +1,300 @@
-.tentang-kami {
-  background-color: var(--background-color-secondary);
+/* ====================
+  Profil Hero Section
+==================== */
+.profile-text {
+  flex: 1;
+  min-width: 280px;
 }
 
-.tentang-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 24px;
-  padding: 1.5rem;
+.profile-text .author {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--gray-700);
 }
 
-.tentang-image {
-  width: 100%;
-  max-width: 360px;
-  border-radius: 1rem;
-  object-fit: cover;
-}
-
-.tentang-content {
-  max-width: 720px;
-  text-align: left;
-}
-.tentang-desc {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.tentang-info p {
-  margin: 0.4rem 0;
-  font-size: 0.95rem;
-  color: var(--text-primary);
-}
-
-.sosial-media {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-  font-size: 1.5rem;
+.profile-text .highlight {
+  font-weight: 600;
   color: var(--primary-color);
 }
 
+.profile-text .heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.profile-text .description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--gray-600);
+  max-width: 540px;
+}
+
+.profile-image {
+  flex: 1;
+  text-align: center;
+  min-width: 260px;
+}
+
+.profile-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ====================
+  Roadmap Section
+==================== */
+.roadmap {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+.roadmap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: var(--primary-color, #0b74de);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.roadmap-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin: 2rem 0;
+  z-index: 1;
+}
+
+.roadmap-item.right {
+  justify-content: flex-end;
+}
+
+.roadmap-content {
+  display: flex;
+  align-items: stretch;
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-width: 420px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  z-index: 2;
+}
+
+.roadmap-content img {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.roadmap-content .text {
+  flex: 1;
+  padding: 1.2rem 1.5rem;
+}
+
+.roadmap-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--text-color);
+}
+
+.roadmap-content p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: var(--gray-600);
+}
+
+.tentang-kami {
+  background-color: #eaf6ff;
+  padding: 3rem 1rem;
+}
+
+.section-heading {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+/* .tentang-wrapper {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  flex-wrap: wrap; 
+} */
+
+/* .tentang-image-wrapper {
+  position: relative;
+  width: 220px;
+  flex-shrink: 0;
+} */
+
+.tentang-image {
+  width: 70%;
+  border-radius: 12px;
+}
+
+/* Decorative dots
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+.dot-1 {
+  width: 50px;
+  height: 50px;
+  background-color: #caffbf;
+  bottom: -10px;
+  left: -20px;
+}
+.dot-2 {
+  width: 60px;
+  height: 60px;
+  background-color: #fdffb6;
+  top: -20px;
+  right: -10px;
+}
+.dot-3 {
+  width: 40px;
+  height: 40px;
+  background-color: #ffd6a5;
+  bottom: 0;
+  right: -30px;
+} */
+
+/* .tentang-content {
+  flex: 1;
+  min-width: 240px;
+} */
+
+.tentang-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.tentang-email {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* .tentang-desc {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+} */
+
+.sosial-media {
+  margin-top: 1rem;
+}
+
 .sosial-media a {
-  color: inherit;
-  transition: color 0.3s ease;
+  font-size: 1rem;
+  margin-right: 0.75rem;
+  color: #10b981;
+  transition: color 0.2s ease-in-out;
 }
 
 .sosial-media a:hover {
-  color: var(--accent-color);
+  color: #059669;
 }
 
-/* Responsive untuk Mobile */
-@media (min-width: 768px) {
+/* Responsive */
+@media (max-width: 768px) {
   .tentang-wrapper {
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
   }
 
   .tentang-content {
-    padding-left: 2rem;
+    text-align: center;
+  }
+
+  .sosial-media a {
+    margin-right: 1rem;
+  }
+
+  /* .dot-1,
+  .dot-2,
+  .dot-3 {
+    display: none;
+  } */
+}
+
+/* ====================
+  Responsive Design
+==================== */
+@media (max-width: 992px) {
+  .profile-text .heading {
+    font-size: 1.75rem;
+  }
+
+  .roadmap::before {
+    left: 25px;
+  }
+
+  .roadmap-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .roadmap-item.right {
+    justify-content: flex-start;
+  }
+
+  .roadmap-content {
+    width: 100%;
+    margin-left: 60px;
+    flex-direction: row;
+  }
+
+  .roadmap-content img {
+    width: 120px;
+  }
+
+  .roadmap-content .text {
+    padding: 1rem;
   }
 }
 
-.card img {
-  width: 100%;
-  max-width: 28rem;
-  height: 28rem;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-}
+@media (max-width: 576px) {
+  .profile-text .heading {
+    font-size: 1.5rem;
+  }
 
-.guru-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  justify-content: center;
-  align-items: stretch;
-}
-.card-guru {
-  background-color: #ffffff;
-  border-radius: 1rem;
-  border: 1px solid #000000;
-  transition: transform 0.3s ease;
-}
+  .profile-text .description {
+    font-size: 0.95rem;
+  }
 
-.card-guru:hover {
-  transform: translateY(-5px);
-}
+  .roadmap::before {
+    left: 20px;
+  }
 
-.card-guru img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 1rem 1rem 0 0;
+  .roadmap-content {
+    flex-direction: column;
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .roadmap-content img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .roadmap-content .text {
+    padding: 1rem;
+  }
 }
